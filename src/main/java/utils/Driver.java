@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 public class Driver {
 
 
-    // Holds the WebDriver instance
     public static WebDriver driver;
+    public static CommonUtils objcommonutils;
     private Logger logger = Logger.getLogger(this.getClass());
 
     // Initialize a webDriver instance of required browser
@@ -25,7 +25,7 @@ public class Driver {
     @AfterSpec
     public void closeDriver(){
         driver.quit();
-        logger.info("Browser clossed Successfully");
+        logger.info("Browser closed Successfully");
     }
 
 }
